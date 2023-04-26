@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva's Birthday</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: whitesmoke;
+            display:block;
+        }
+        .header{
+            padding: 20px;
+            background-color: gray;
+            text-align: center;
+        }
+        .header h1{
+            font-size: 60px;
+        }
+        ul{
+            background-color:gainsboro;
+            color: black;
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            display: block;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            padding: 14px 16px;
+            display: block;
+        }
+        li a:hover{
+            background-color:palevioletred;
+            color: whitesmoke;
+        }
+        li a.active{
+            background-color: red;
+            color: whitesmoke;
+        }
+        .row{
+            display:flex;
+            flex-direction: row;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .leftcolumn{
+            float: left;
+            width: 70%;
+            max-height: max-content;
+        }
+        .card{
+            padding: 20px;
+            margin-top: 20px;
+            background-color:rgba(88, 80, 80,0.2);
+        }
+        .card h3{
+            font-size: 40px;
+        }
+        .card i{
+            line-height: 25px;
+            font-size: 20px;
+        }
+        .leftcolumn img{
+            object-fit: contain;
+        }
+        .rightcolumn img{
+            object-fit: contain;
+            max-height: 200px;
+        }
+        .rightcolumn{
+            float: left;
+            width: 30%;
+            background-color:white;
+            padding-left: 20px;
+            max-height: max-content;
+        }
+        .word{
+            word-spacing: 3px;
+        }
+        .full{
+            width: 100%;
+            background-color: antiquewhite;
+        }
+        .series{
+            font-size: 25px;
+            text-decoration:dashed;
+            text-shadow: 7px 5px 3px grey;
+            animation-name: shiva;
+            animation-duration: 8s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+        }
+        @-webkit-keyframes shiva{
+            0%{color: #902002;}
+            10%{color: yellow;}
+            20%{color:green;}
+            40%{color: red;}
+            60%{color: palevioletred;}
+            80%{color: black;}
+            100%{color: blue;}
+        }
+        .div{
+            column-count:5;
+            column-gap: 2rem;
+            column-width: 10em;
+            column-rule: 1pt dashed #902002;
+        }
+        h2{
+            column-span: all;
+        }
+        .footer{
+            background: linear-gradient(to right,#032f2f,#290029);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .subfooters1 h1{
+            text-transform: uppercase;
+            position: relative;
+            left: -20px;
+        }
+        .subfooters1{
+            margin: 20px;
+            padding: 20px;
+            max-width: fit-content;
+            display: grid;
+            justify-content:flex-start;
+            align-items:flex-start;
+            line-height: 25px;
+            font-size: 19px;
+            position: relative;
+            left: 20px;
+        }
+        .subfooters1 address{
+            margin-bottom: 20px;
+            color: snow;
+        }
+        .con{
+            display:flex;
+            gap: 20px;
+            flex-direction: row;
+        }
+        .con a{
+            text-decoration: none;
+            color: #902002;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <h1>Hey Shiva!</h1>
+    <p contenteditable="true">Welcome to your site Shiva</p>
+    </div>
+    <div>
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">HELP</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h3>Shiva's Birthday</h3>
+                <p>Celebrated on 11-02-2023</p>
+                <i class="word"><em style="letter-spacing: 2px;">Hello Shiva!</em><br> i'm one of your loved-one,i think these wish are different 😁. 
+                    Actually i wanted to spend the hole day with you 😢, But unfortunatelly i got stucked 
+                    in other things around me!.
+
+                    I founded all our favouarite Web series , Just right of these message our web series are
+                    there , i'm sure that we will watch these series together ..............................
+                    .......<strong>Very soon Shiva!</strong>
+                </i>
+                <img src="./IMG_20220511_181959.jpg" style="width: 100%; margin-top: 10px; height:300px;">
+                <em class=".word">Once Agian ...<br>
+                HAPPY BIRTHDAY SHIVA!<br>
+                ❤️😍💕:)
+                </em>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <strong class="series">Web Series</strong>
+                <p>1.Money Heist</p>
+                <img src="./wp4961946 - Copy.webp" style="width: 100%; height:150px;">
+                <p>2.Stranger Things</p>
+                <img src="./Stranger things.png" style="width: 100%; height:150px;">
+                <p>3.Dark</p>
+                <img src="./Dark.jpg" style="width:100%; height:150px;">
+            </div>
+        </div>
+    </div>
+        <div class="full">
+            <div class="card">
+                <div class="div"> 
+                    <h2>Artificial intelligence</h2>
+                    BFS (Brute-Force)
+                    We can perform a Breadth-first search on the state space tree. This always finds a
+                    goal state nearest to the root. But no matter what the initial state is, the algorithm
+                    attempts the same sequence of moves like DFS.
+                    3. Branch and Boun
+                    The search for an answer node can often be speeded by using an “intelligent”
+                    ranking function, also called an approximate cost function to avoid searching in subtrees that do not contain an answer node. It is similar to the backtracking technique
+                    but uses a BFS-like search.
+                    There are basically three types of nodes involved in Branch and Bound
+                    1. Live node is a node that has been generated but whose children have not yet
+                    been generated.
+                    2. E-node is a live node whose children are currently being explored. In other
+                    words, an E-node is a node currently being expanded.
+                    3. Dead node is a generated node that is not to be expanded or explored any
+                    further. All children of a dead node have already been expanded.
+                    Cost function:
+                    Each node X in the search tree is associated with a cost. The cost function is useful
+                    for determining the next E-node.
+                </div>  
+            </div>
+        </div>
+        <br>
+        <br>
+    <div class="footer">
+    <div class="subfooters1">
+        <h1>Contact Me</h1>
+    <address>
+        <p>K T Shiva kumar<br>
+        <span style="color:red">S/O  _   </span>   K T Eswaraiah</p>
+        Sreekantapuram ,Hindupur 515201 <br>Andhra Pradesh.<br>
+    </address>
+    <div class="con">
+        <a href="tel:+916303966313">Call Me</a>
+        <a href="mailto:kurubathota.shivakumar@gmail.com">E-mail Me</a>
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>
